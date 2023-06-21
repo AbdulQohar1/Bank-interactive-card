@@ -1,0 +1,480 @@
+body{
+  box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Inconsolata', monospace;
+}
+
+.container{
+	display: flex;
+}
+
+.desktop{
+	background-image: url('./images/bg-main-desktop.png');
+	height: 32rem;
+	width: 40%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 2rem;
+	position: relative;
+}
+
+.user-card-front{
+
+	/* background-image: url('./images/bg-card-front.png');
+	background-repeat: no-repeat;
+	height: 50%; */
+	width: 75%;
+    padding: 60px;
+    position: absolute;
+    top: 1.8rem;
+    left: 8rem;
+}
+
+.card-info{
+	padding: 20px;
+	
+}
+
+.box{
+	width: 1.5rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	background-color: #fff;
+	padding: 4px;
+
+}
+
+.box-1{
+	width: 1.2rem;
+	height: 1.3rem;
+	border-radius: 50%;
+	/* background-color: #fff; */
+	/* background-color: #554dec; */
+}
+
+.box-2{
+	background-color: #554dec; 
+	width: 1rem;
+	z-index: 1;
+}
+
+ .card-header{
+	display: flex;
+    gap: 20px;
+    align-items: center;
+ } 
+
+.card-number{
+	color: #fff;
+	font-size: 20px;
+	padding: 5px 0;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+.owner-info{
+	color: #fff;
+	justify-content: space-between;
+    display: flex;
+}
+
+.card-front-cardHolderName{
+	font-size: 13px;
+}
+
+.card-front-expiringDate{
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.user-card-back{
+	width: 70%;
+    position: absolute;
+    top: 16rem;
+    left: 14rem;
+    padding: 45px;
+
+}
+.user-card-back{
+	color: #fff;
+	margin-left: auto;
+}
+
+.back-card-cvcDigit{
+	width: 20%;
+    margin-left: auto;
+    position: absolute;
+    top: 5.4rem;
+    right: 2rem;
+    color: #ebdada;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Poppins', sans-serif;
+}
+
+.user-info-section{
+	width: 65%;
+	margin: 97px 10px 10px 168px;
+}
+
+.user-info{
+	width: 85%;
+	padding: 35px;
+}
+
+.user-main-details{
+	margin: 180px ;
+	padding: 35px;
+}
+
+.user-subMain-details{
+	display: flex;
+	gap: 30px;
+	padding: 15px 0 25px 0;
+}
+label{
+	display: block;
+	padding: 8px 0;
+	font-size: 11px;
+	font-weight: 900;
+	opacity: 0.6;
+}
+
+ .month-of-expiring{
+	width: 35px;
+    text-align: center;
+	padding: 7px;
+	font-size: 8px;
+    opacity: 0.7;
+	cursor: pointer;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.year-of-expiring {
+	width: 35px;
+	text-align: center;
+	padding: 7px;
+	font-size: 10px;
+    opacity: 0.7;
+	cursor: pointer;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+	/* border-radius: 1%; */
+}
+
+.cvc-digits{
+	width: 100%;
+	text-align: center;
+	padding: 7px;
+    font-size: 10px;
+    opacity: 0.7;
+	cursor: pointer;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+}
+
+.input-field{
+	font-size: 10px;
+    opacity: 0.7;
+    padding: 7px 15px;
+	width: 70%;
+	cursor: pointer;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+	/* border: rgba(87, 86, 86, 0.6); */
+}
+
+.confirmBtn{
+	background-color: rgb(39,11,54);
+	color: #fff;
+	padding: 10px 5px;
+	width: 80%;
+	cursor: pointer;
+	border-radius: 5px;
+    border: none
+
+}
+@media screen and ( max-width: 930px) {
+	.user-card-front{
+		padding: 20px;
+		top: 5.8rem;
+	} 
+	.card-info{
+		padding: 10px;
+	}
+	.box{
+		width: 0.4rem;
+    	height: 0.4rem;
+	}
+	.card-number{
+		font-size: 14px;
+    	padding: 12px 0;
+	}
+	.card-front-expiringDate{
+		font-size: 12px;
+	}
+	 .owner-info{
+		font-size: 12px;
+	} 
+
+	.back-card-cvcDigit{    
+		top: 5rem;
+		font-size: 12px;
+		opacity: 0.8;
+		
+	}
+	
+}
+
+@media screen and (max-width: 800px) {
+
+	body{
+		width: 51%;
+		margin: 0 auto;
+	}
+	.container{
+		display: block;
+	}
+
+	.desktop{
+		display: none;
+	}
+
+	.mobile{
+		display: block;
+		background-image: url('./images/bg-main-mobile.png');
+		background-repeat: no-repeat;
+		width: 100%;
+		position: relative;
+		padding:1.5.rem;
+	}
+
+	.user-card-back{
+		position: absolute;
+		top: 0;
+		width: 60%;
+    	right: 1.8rem;
+	}
+	.back-card-cvcDigit{
+		top: 6rem;
+	}
+
+	.user-card-front{
+		position: absolute;
+		z-index: 1;
+		width: 65%;
+		top: 6.7rem;
+		left: 0rem;
+		padding: 20px;
+	}
+
+	.card-info{
+		padding: 20px;
+	}
+	.card-number{
+		font-size: 20px;
+    	padding: 10px 0;
+	}
+	.owner-info{
+		padding: 10px 0;
+	}
+
+	.user-info-section{
+		margin: 0 auto;
+		width: 100%;
+		position: relative;
+	}
+	
+	.user-info{
+		width: 100%;
+		position: absolute;
+		top: -18rem;
+	}
+
+	label{
+		font-size: 14px;
+		opacity: 0.9;
+		font-weight: 800;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.user-card-back{
+		top: 1.4rem;
+		width: 60%;
+	}
+	.back-card-cvcDigit{
+		top: 5.6rem;
+    	padding-right: 5px;
+	}
+
+	.user-card-front{
+		width: 60%;
+		top: 8.8rem;
+		padding: 0;
+		left: 1rem;
+	}
+
+	.card-info{
+		padding: 5px 8px;
+	}
+
+	.card-number{
+		padding: 12px 0 0 0;
+		font-size: 16px;
+	}
+
+	.cvc-digits{
+		width: 70%;
+	}
+
+	.owner-info{
+		padding: 5px 0
+	}
+
+	.user-info{
+		padding: 20px;
+	}
+
+	.input-field{
+		width: 95%;
+		padding: 14px;
+		font-size: 15px;
+	}
+
+	.month-of-expiring, .year-of-expiring{
+		width: 25%;
+		padding: 14px;
+		font-size: 15px;
+
+	}
+	.cvc-digits{
+		width: 100%;
+		padding: 14px 5px;
+    font-size: 15px;
+	}
+
+	.confirmBtn{
+		width: 100%;
+		padding: 15px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	body{
+		margin: 0 auto;
+	}
+	.back-card-cvcDigit{
+		top: 4.6rem;
+	}
+
+	.card-number{
+		padding: 4px 0;
+    font-size: 12px;
+	}
+
+	.owner-info{
+		padding: 0;
+		font-size: 8px;
+	}
+
+	.card-front-cardHolderName{
+		font-size: 9px;
+	}
+	.card-front-expiringDate{
+		font-size: 9px
+	}
+
+	.user-subMain-details{
+		gap: 10px;
+	}
+
+	label{
+		font-size: 12px;
+	}
+
+	.input-field{
+		padding: 10px;
+	}
+
+	.month-of-expiring, .year-of-expiring{
+		padding: 8px;
+    font-size: 12px;
+	}
+
+	.cvc-digits{
+		width: 95%;
+    padding: 8px 4px
+	}
+}
+
+@media screen and (max-width: 395px) {
+	.back-card-cvcDigit {
+		top: 4.3rem;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.back-card-cvcDigit{
+		top: 4.3rem;
+    	font-size: 10px;
+	}
+
+	.user-card-front{
+		top: 6.7rem;
+	}
+	.card-info {
+		padding: 0px 8px;
+	}
+
+	/* .card-header{
+		padding: 5px 0 0 0;
+	} */
+
+	.box{
+		width: 0.2rem;
+		height: 0.2rem;
+		padding: 3px;
+	}
+
+	.card-number{
+		font-size: 10px;
+		padding: 3px 
+	}
+
+	.card-front-cardHolderName, .card-front-expiringDate{
+		font-size: 8px;
+	}
+
+	.input-field{
+		padding: 8px;
+		font-size: 10px;
+	}
+
+	.month-of-expiring, .year-of-expiring{
+		padding: 5px;
+    font-size: 10px;
+	}
+
+	.cvc-digits{
+		padding: 5px;
+    font-size: 10px;	
+	}
+	.expiring-date {
+		font-size: 9px;
+		padding: 5px;
+	}
+	.confirmBtn{
+		padding: 10px;
+	}
+
+	.cvc{
+		font-size: 10px;
+    	padding: 4px;
+	}
+}
+

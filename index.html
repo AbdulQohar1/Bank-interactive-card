@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive card</title>
+</head>
+<body>
+  <section class="container">
+    <div class="desktop mobile">
+      <div>
+        <img src="images/bg-card-front.png" alt="user-card-front" class="user-card-front">
+        <div class="user-card-front">
+          <div class="card-info">
+            <div class="card-header">
+              <div class="box"></div>
+              <div class="box-1">
+                <div class="box-2"></div>
+              </div>
+            </div>
+            <h1 class="card-number">0000 0000 0000 0000</h1>
+            <div class="owner-info">
+              <span class="card-front-cardHolderName">JANE APPLESEED</span>
+              <span class="card-front-expiringDate">00/00</span>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        <img src="images/bg-card-back.png" alt="user-card-back" class="user-card-back">
+        <div class="user-card-back">
+          <p class="back-card-cvcDigit">000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-info-section">
+      <div class="user-info">
+        <div>
+          <label for="card-holder" class="card-holder-name">CARDHOLDER NAME</label>
+          <input type="text" name="card-holder-name" placeholder="e.g Jane Appleseed" class="input-field">
+        </div>
+        <div>
+          <label for="card-number" class="card-serial-number">CARD NUMBER</label>
+          <input type="number" name="card-number" class="input-field" placeholder="e.g 1234 5678 9123 0000">
+        </div>
+        <div  class="user-subMain-details">
+          <div class="expiring-date-details">
+            <label for="expiring-date" class="expiring-date">
+              EXP.DATE (MM/YY)
+            </label>
+            <div>
+              <input type="number" name="month" placeholder="MM" class="month-of-expiring">
+              <input type="number" name="year" placeholder="YY" class="year-of-expiring">
+            </div>
+          </div>
+          <div class="card-cvc-details">
+            <label for="card-cvc" class="cvc">CVC</label>
+            <input type="number" name="Card-CVC" placeholder="e.g 123" class="cvc-digits">
+          </div>  
+        </div>
+        <button class="confirmBtn">Confirm</button>
+      </div>
+    </div>
+  </section>
+    
+  <script src="script.js"></script>  
+</body>
+</html>
