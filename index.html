@@ -46,11 +46,11 @@
       <div class="user-info">
         <div>
           <label for="card-holder" class="card-holder-name">CARDHOLDER NAME</label>
-          <input type="text" name="card-holder-name" placeholder="e.g Jane Appleseed" class="input-field">
+          <input type="text" name="card-holder-name" placeholder="e.g Jane Appleseed" class="input-field input-card-name">
         </div>
         <div>
           <label for="card-number" class="card-serial-number">CARD NUMBER</label>
-          <input type="number" name="card-number" class="input-field" placeholder="e.g 1234 5678 9123 0000">
+          <input type="text" name="card-number" class="input-field input-card-number" placeholder="e.g 1234 5678 9123 0000">
         </div>
         <div  class="user-subMain-details">
           <div class="expiring-date-details">
@@ -58,14 +58,25 @@
               EXP.DATE (MM/YY)
             </label>
             <div>
-              <input type="number" name="month" placeholder="MM" class="month-of-expiring">
-              <input type="number" name="year" placeholder="YY" class="year-of-expiring">
+              <input type="number" name="month" placeholder="MM" pattern="[0-9] {2}" class="month-of-expiring input-subMain-details">
+              <input type="number" name="year" placeholder="YY" class="year-of-expiring input-subMain-details" maxlength="4"/>
+             
+              <p class="blank1"></p>          
             </div>
           </div>
           <div class="card-cvc-details">
             <label for="card-cvc" class="cvc">CVC</label>
-            <input type="number" name="Card-CVC" placeholder="e.g 123" class="cvc-digits">
-          </div>  
+            <input type="number" name="Card-CVC" placeholder="e.g 123" class="input-cvc-digits input-subMain-details">
+
+            <p class="blank2"></p>  
+            <!-- <p class="wrongformat"></p> -->
+          </div> 
+          <!-- <div>
+            <span class="wrongformat"></span>
+            <span class="wrongformat"></span>
+          </div>  -->
+          
+          <!-- <p class="hidden">Can't be blank</p>  -->
         </div>
         <button class="confirmBtn">Confirm</button>
       </div>

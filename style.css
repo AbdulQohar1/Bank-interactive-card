@@ -20,10 +20,6 @@ body{
 }
 
 .user-card-front{
-
-	/* background-image: url('./images/bg-card-front.png');
-	background-repeat: no-repeat;
-	height: 50%; */
 	width: 75%;
     padding: 60px;
     position: absolute;
@@ -49,8 +45,7 @@ body{
 	width: 1.2rem;
 	height: 1.3rem;
 	border-radius: 50%;
-	/* background-color: #fff; */
-	/* background-color: #554dec; */
+
 }
 
 .box-2{
@@ -164,7 +159,7 @@ label{
 	/* border-radius: 1%; */
 }
 
-.cvc-digits{
+.input-cvc-digits{
 	width: 100%;
 	text-align: center;
 	padding: 7px;
@@ -196,6 +191,17 @@ label{
 	border-radius: 5px;
     border: none
 
+}
+
+.hidden{
+	color: red;
+	font-size: 11px;
+}
+
+.wrongformat, .blank1, .blank2{
+	font-size: 10px;
+	color: red;
+	display: block;
 }
 @media screen and ( max-width: 930px) {
 	.user-card-front{
@@ -327,9 +333,9 @@ label{
 		font-size: 16px;
 	}
 
-	.cvc-digits{
+	/* .input-cvc-digits{
 		width: 70%;
-	}
+	} */
 
 	.owner-info{
 		padding: 5px 0
@@ -351,7 +357,7 @@ label{
 		font-size: 15px;
 
 	}
-	.cvc-digits{
+	.input-cvc-digits{
 		width: 100%;
 		padding: 14px 5px;
     font-size: 15px;
@@ -406,7 +412,7 @@ label{
     font-size: 12px;
 	}
 
-	.cvc-digits{
+	.input-cvc-digits{
 		width: 95%;
     padding: 8px 4px
 	}
@@ -460,7 +466,7 @@ label{
     font-size: 10px;
 	}
 
-	.cvc-digits{
+	.input-cvc-digits{
 		padding: 5px;
     font-size: 10px;	
 	}
