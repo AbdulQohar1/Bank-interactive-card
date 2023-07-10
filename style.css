@@ -198,7 +198,7 @@ label{
 	font-size: 11px;
 }
 
-.wrongformat, .blank1, .blank2{
+.wrongFormatMessage, .blank1, .blank2, .numberLength{
 	font-size: 10px;
 	color: red;
 	display: block;

@@ -29,7 +29,9 @@
             <h1 class="card-number">0000 0000 0000 0000</h1>
             <div class="owner-info">
               <span class="card-front-cardHolderName">JANE APPLESEED</span>
-              <span class="card-front-expiringDate">00/00</span>
+              <div class="card-front-expiringDate">
+                <span class="monthOutput">00</span><span>/</span><span class="yearOutput">00</span>
+              </div>
             </div>
           </div>
 
@@ -51,6 +53,8 @@
         <div>
           <label for="card-number" class="card-serial-number">CARD NUMBER</label>
           <input type="text" name="card-number" class="input-field input-card-number" placeholder="e.g 1234 5678 9123 0000">
+          <p class="numberLength"></p> 
+          <p class="wrongFormatMessage"></p>
         </div>
         <div  class="user-subMain-details">
           <div class="expiring-date-details">
@@ -58,17 +62,18 @@
               EXP.DATE (MM/YY)
             </label>
             <div>
-              <input type="number" name="month" placeholder="MM" pattern="[0-9] {2}" class="month-of-expiring input-subMain-details">
+              <input type="number" name="month" placeholder="MM" pattern="[0-9] {2}" class="month-of-expiring input-subMain-details" maxlength="2">
               <input type="number" name="year" placeholder="YY" class="year-of-expiring input-subMain-details" maxlength="4"/>
              
-              <p class="blank1"></p>          
+              <p class="blank1"></p> 
+                      
             </div>
           </div>
           <div class="card-cvc-details">
             <label for="card-cvc" class="cvc">CVC</label>
-            <input type="number" name="Card-CVC" placeholder="e.g 123" class="input-cvc-digits input-subMain-details">
+            <input type="number" name="Card-CVC" placeholder="e.g 123" maxlength="3" class="input-cvc-digits input-subMain-details">
 
-            <p class="blank2"></p>  
+            <p class="blank2"></p>
             <!-- <p class="wrongformat"></p> -->
           </div> 
           <!-- <div>
